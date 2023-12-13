@@ -49,5 +49,3 @@ de tâches dans `CreateTacheComponent`.
 Utilisez la méthode `addTask()` du service `TachesService`
 pour ajouter une tâche dans la liste lors de la soumission du
 formulaire.
-#### 6- Code github et deploiement sur Netlify :
-Vous devez m’envoyer votre code github et le site deployé
