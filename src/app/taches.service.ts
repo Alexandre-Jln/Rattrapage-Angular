@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import {mockTaches} from "./mock-taches";
+import { mockTaches } from './mock-taches';
+import { ITask } from './iTask'
 
-interface ITask {
-}
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +17,7 @@ export class TachesService {
   }
 
   addTask(newTask: ITask) {
+
     this.toDoList.push(newTask);
   }
 }

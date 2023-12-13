@@ -1,1 +1,15 @@
-<p>create-tache-component works!</p>
+<div class="body-container">
+  <h3 class="text-center">Ajouter une tâche ici</h3>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+
+    <div class="form-group">
+      <label for="paperInputs1">Titre</label>
+      <input type="text" placeholder="Titre" id="paperInputs1" formControlName="titre" class="input">
+      <div *ngIf="form.get('titre')?.hasError('required')" class="error">
+        Le champ est requis.
+      </div>
+    </div>
+    <button class="btn-secondary">Ajouter</button>
+  </form>
+</div>

@@ -1,1 +1,19 @@
-<p>taches-component works!</p>
+<div class="body-container">
+
+  <h3>Ma To Do List</h3>
+
+  <div *ngFor="let task of tasks">
+    <div class="task-item">
+      <p [class.checked]="task.completed">{{ task.id }} : {{ task.titre }}</p>
+      <fieldset class="form-group">
+        <label for="paperChecks{{ task.id }}" class="paper-check">
+          <input (click)="onClick(task)" type="checkbox" name="paperChecks" id="paperChecks{{ task.id }}" value="option {{ task.id }}"> <span></span>
+        </label>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+<div (click)="reload()" class="reload-container">
+  <p>Réinitialiser la todo list !</p>
+</div>

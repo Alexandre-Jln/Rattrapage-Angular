@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TachesComponentComponent } from './taches-component/taches-component.component';
 import { CreateTacheComponentComponent } from './create-tache-component/create-tache-component.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponentComponent } from './header-component/header-component.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
