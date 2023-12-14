@@ -73,8 +73,7 @@ form > .form-group > input {
 .checked {
   transition: all 0.3s ease-in-out;
   width: fit-content;
-  background-color: red;
-  border: 2px solid red;
+  border: 2px solid;
   color: rgba(128, 128, 128, 0.719);
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
